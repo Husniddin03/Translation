@@ -22,7 +22,7 @@ include 'translation.php';
             </div>
             <div class="col-xxl col-12-lg mt-3">
                 <select name="from" class="mb-3 form-select" aria-label="Default select example">
-                    <option selected><?=isset($from)?$languages[$from]:"From which language"?></option>
+                    <option value="uz" selected><?=isset($from)?$languages[$from]:"Uzbek"?></option>
                     <?php foreach($languages as $key=>$item){
                         echo '<option value="'.$key.'">'.$item.'</option>';
                     }?>
@@ -34,7 +34,7 @@ include 'translation.php';
             </div>
             <div class="col-xxl col-12-lg mt-3">
                 <select name="to" class="mb-3 form-select" aria-label="Default select example">
-                    <option selected><?=isset($to)?$languages[$to]:"Which language"?></option>
+                    <option value="en" selected><?=isset($to)?$languages[$to]:"English"?></option>
                     <?php foreach($languages as $key=>$item){
                         echo '<option value="'.$key.'">'.$item.'</option>';
                     }?>

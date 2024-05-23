@@ -1,8 +1,7 @@
 <?php
 
-
-if (isset($_POST['submit'])) {
-    $text = $_POST['text'];
+if (isset($_POST['submit']) && strlen($_POST['text'])>0) {
+    $text = ($_POST['text']);
     $from = $_POST['from'];
     $to = $_POST['to'];
     $url = "https://api.mymemory.translated.net/get?q=" . urlencode($text) . "&langpair={$from}|{$to}";
